@@ -14,6 +14,6 @@ for sample in *_R1_001.fastq.gz
         cd ../
         results="./results_${name}"
         mkdir ${results}
-        qiime2.sif tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path ./reads --input-format CasavaOneEightSingleLanePerSampleDirFmt --output-path ${results}.qza
+        qiime2-2021.8.sif tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path ./reads --input-format CasavaOneEightSingleLanePerSampleDirFmt --output-path ${results}.qza
     done  
 
