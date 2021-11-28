@@ -1,4 +1,4 @@
-# USAGE :
+# USAGE : changes software name in any .sh file within the current path with recursivity
 # the first argument of the script is the current name and version of the software
 # the second argument of the script is the new name and version of the software
 
