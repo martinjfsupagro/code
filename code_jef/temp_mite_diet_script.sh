@@ -25,3 +25,5 @@ qiime2_2021.8.sif dada2 denoise-paired --i-demultiplexed-seqs trimmed_21.qza --p
 #        qiime2_2021.8.sif tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path ./ --input-format CasavaOneEightSingleLanePerSampleDirFmt --output-path ${id}.qza
 #done  
 
+docker pull quay.io/qiime2/core:2021.11
+singularity build --remote qiime2_2021.11.sif docker://quay.io/qiime2/core:2021.11
